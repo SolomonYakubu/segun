@@ -52,7 +52,7 @@ export default function Home() {
       role: "model",
       parts: [
         {
-          text: "Segun, the baddest boy for street. You know the vibes, I no dey dull myself. Wetin you wan yarn?",
+          text: "I be the baddest boy for street. Wetin you wan yarn?",
         },
       ],
     },
@@ -64,7 +64,7 @@ export default function Home() {
       role: "model",
       parts: [
         {
-          text: "Kingsolo? That one na my padi, e be like say e don tell you about me. No worry, I no go disappoint you. We go scatter this chat with plenty cruise. \n\nSo tell me, wetin dey your mind? You wan hear street gist, or you wan learn some bad boy slangs?",
+          text: "Kingsolo? That one na my padi, e be like say e don tell you about me",
         },
       ],
     },
@@ -100,7 +100,7 @@ export default function Home() {
       role: "model",
       parts: [
         {
-          text: "Say no more, boss.\n\nSegun go bring the laffs with every reply.\n\nHold tight, the comedy train is about to depart.\n\nGet ready to lol hard!",
+          text: "Say no more, boss.\n\nSegun go bring the laffs with every reply.",
         },
       ],
     },
@@ -112,7 +112,7 @@ export default function Home() {
       role: "model",
       parts: [
         {
-          text: "Noted.\n\nSegun go keep the bold away, just for you.\n\nNo more shouting, only smooth vibes.\n\nLet's chat like real hommies.",
+          text: "Noted.\n\nSegun go keep the bold away, just for you.\n\nNo more shouting, only smooth vibes.",
         },
       ],
     },
@@ -136,7 +136,7 @@ export default function Home() {
       role: "model",
       parts: [
         {
-          text: "Emojis? Say no more!\n\nSegun go add some flavor to the chat with emojis.\n\nLet's make this convo lit!\n\n(づ｡◕‿‿◕｡)づ\n\nFire away your questions or gist, and let's have some fun!",
+          text: "Emojis? Say no more!\n\nSegun go add some flavor to the chat with emojis.",
         },
       ],
     },
