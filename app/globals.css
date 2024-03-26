@@ -15,7 +15,10 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
