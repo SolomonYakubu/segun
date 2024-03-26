@@ -170,6 +170,7 @@ async function runChat(text: string) {
   try {
     const result = await chat.sendMessage(text);
     const response = result.response;
+
     return response.text();
   } catch (error) {
     return "Talk am again";
@@ -202,6 +203,7 @@ export default function Home() {
         message: text,
         reply: newReply,
       };
+      setMessage((chat) => [...chat.slice(0, -1), newMessage]);
     }, 200);
     setTimeout(async () => {
       if (scrollRef.current) {
@@ -221,21 +223,21 @@ export default function Home() {
           ref={scrollRef}
           className="flex flex-col gap-4 mt-16 pb-10  align-end w-full p-5 h-full transition-all overflow-y-scroll"
         >
-          {message.map((item) => (
+          {message.map((item, index) => (
             <>
               {item.message && (
                 <p
+                  key={index}
                   className="text-white w-5/6 self-end bg-blue-500 rounded-3xl p-3"
-                  key={Math.floor(Math.random() * 888)}
                 >
                   {item.message}
                 </p>
               )}
               <p
+                key={index + 2}
                 className={`text-white bg-green-500 w-5/6 self-start rounded-3xl p-3 ${
                   item.reply === "typing..." && "animate-pulse"
                 }`}
-                key={Math.floor(Math.random() * 888)}
               >
                 {item.reply}
               </p>
