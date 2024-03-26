@@ -185,7 +185,7 @@ export default function Home() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
 
-  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: any) {
     e.preventDefault();
     const text = e.target.message.value;
     e.target.message.value = "";
