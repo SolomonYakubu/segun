@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
 
-const inter = Ubuntu({ subsets: ["latin"], weight: ["700"] });
+const inter = Ubuntu({ subsets: ["latin"], weight: ["300"] });
 
 export const metadata: Metadata = {
   title: "Segun the gangstar",
