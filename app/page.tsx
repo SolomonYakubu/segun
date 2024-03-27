@@ -2,7 +2,7 @@
 import Image from "next/image";
 // node --version # Should be >= 18
 // npm install @google/generative-ai
-import { useState, useEffect, useRef } from "react";
+import { useState, useCallback, useRef } from "react";
 import { LuSendHorizonal } from "react-icons/lu";
 import { FormEvent } from "react";
 import type { Content } from "@google/generative-ai";
@@ -337,10 +337,10 @@ export default function Home() {
       if (scrollRef.current) {
         scrollRef.current.scrollTop = scrollRef.current.scrollHeight - 500;
       }
+      setChatHistory((chat) => [...chat.slice(0, -2), ...newHistory]);
     }, 100);
-    setChatHistory((chat) => [...chat, ...newHistory]);
   }
-
+  console.log(chatHistory);
   return (
     <main className="h-[90vh] w-full flex justify-center items-center relative  ">
       <div className="md:w-1/2 w-full relative h-full  flex flex-col justify-between items-center bg-slate-200 transition-all overflow-y-hidden ">
