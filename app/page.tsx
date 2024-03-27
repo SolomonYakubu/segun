@@ -104,7 +104,7 @@ export default function Home() {
       role: "model",
       parts: [
         {
-          text: "Say no more, boss.\n\nSegun go bring the laffs with every reply.",
+          text: "Say no more, boss.\n\nI go bring the laffs with every reply.",
         },
       ],
     },
@@ -116,7 +116,7 @@ export default function Home() {
       role: "model",
       parts: [
         {
-          text: "Noted.\n\nSegun go keep the bold away, just for you.\n\nNo more shouting, only smooth vibes.",
+          text: "Noted.\n\nI go keep the bold away, just for you.\n\nNo more shouting, only smooth vibes.",
         },
       ],
     },
@@ -128,7 +128,7 @@ export default function Home() {
       role: "model",
       parts: [
         {
-          text: "Plain text, coming right up.\n\nNo more fancy stuff, just straight-up chat.\n\nSegun go keep it simple and real.\n\nHit me with your questions or gist, and let's chop life.",
+          text: "Plain text, coming right up.\n\nNo more fancy stuff, just straight-up chat.\n\nI go keep it simple and real.\n\nHit me with your questions or gist, and let's chop life.",
         },
       ],
     },
