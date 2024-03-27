@@ -248,7 +248,7 @@ export default function Home() {
           role: "model",
           parts: [
             {
-              text: "Say no more, boss.\n\nSegun go bring the laffs with every reply.\n\nHold tight, the comedy train is about to depart.\n\nGet ready to lol hard!",
+              text: "Say no more, boss.\n\nSegun go bring the laffs with every reply 😅😅.\n\nHold tight, the comedy train is about to depart.\n\nGet ready to lol hard!",
             },
           ],
         },
@@ -284,7 +284,7 @@ export default function Home() {
           role: "model",
           parts: [
             {
-              text: "Emojis? Say no more!\n\nSegun go add some flavor to the chat with emojis.\n\nLet's make this convo lit!\n\n(づ｡◕‿‿◕｡)づ\n\nFire away your questions or gist, and let's have some fun!",
+              text: "Emojis? Say no more!\n\nSegun go add some flavor to the chat with emojis 😎.\n\nLet's make this convo lit!\n\n😁🔥\n\nFire away your questions or gist, and let's have some fun!🎉🎉",
             },
           ],
         },
