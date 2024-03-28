@@ -398,7 +398,7 @@ export default function Home() {
 
           <button
             type="submit"
-            className=" bg-cyan-500 text-white  p-3 absolute right-3 rounded-full"
+            className=" bg-cyan-500 text-white  p-3 absolute right-[0.8rem] rounded-full"
           >
             <LuSendHorizonal size={30} />
           </button>
