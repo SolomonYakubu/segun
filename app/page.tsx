@@ -391,7 +391,7 @@ export default function Home() {
             name="message"
             rows={1}
             autoComplete="true"
-            className="text-gray-800 w-full cursor-text rounded-full px-4 py-4 pr-12 font-bold  border-slate-600 border-4  border-solid outline-none"
+            className="text-gray-800 w-full bg-slate-100 cursor-text rounded-full px-4 py-4 pr-12 font-bold  border-slate-600 border-4  border-solid outline-none"
             ref={textAreaRef}
             autoFocus={true}
           />
