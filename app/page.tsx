@@ -351,9 +351,9 @@ export default function Home() {
   }
   console.log(chatHistory);
   return (
-    <main className="h-[90vh] w-full flex justify-center items-center relative  ">
-      <div className="md:w-1/2 w-full relative h-full  flex flex-col justify-between items-center bg-slate-900 transition-all overflow-y-hidden ">
-        <div className="h-16 w-full md:w-1/2 bg-cyan-500 shadow shadow-slate-700 fixed top-0 flex justify-between items-center">
+    <main className="h-[90vh] md:h-screen w-full flex justify-center items-center relative  md:bg-slate-800 ">
+      <div className="md:w-1/2 w-full relative h-full md:h-5/6 flex flex-col justify-between items-center bg-slate-900 transition-all overflow-y-hidden md:rounded-lg shadow-2xl">
+        <div className="h-16 w-full md:w-1/2 bg-cyan-500 shadow shadow-slate-700 fixed top-0 md:top-8 flex justify-between items-center">
           <div className=" flex items-center gap-2 rounded-b-2xl ">
             <Image src={segun} alt={""} className="h-12 w-12" />
             <p className="font-bold text-xl">Segun</p>
