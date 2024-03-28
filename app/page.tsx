@@ -12,6 +12,7 @@ import {
   HarmCategory,
   HarmBlockThreshold,
 } from "@google/generative-ai";
+import { BsLinkedin, BsTwitter, BsTwitterX } from "react-icons/bs";
 
 type Chat = {
   message: string;
@@ -352,9 +353,20 @@ export default function Home() {
   return (
     <main className="h-[90vh] w-full flex justify-center items-center relative  ">
       <div className="md:w-1/2 w-full relative h-full  flex flex-col justify-between items-center bg-slate-900 transition-all overflow-y-hidden ">
-        <div className="h-16 w-full md:w-1/2 bg-cyan-500 shadow shadow-slate-700 fixed top-0 flex items-center gap-2 rounded-b-2xl ">
-          <Image src={segun} alt={""} className="h-12 w-12" />
-          <p className="font-bold text-xl">Segun</p>
+        <div className="h-16 w-full md:w-1/2 bg-cyan-500 shadow shadow-slate-700 fixed top-0 flex justify-between items-center">
+          <div className=" flex items-center gap-2 rounded-b-2xl ">
+            <Image src={segun} alt={""} className="h-12 w-12" />
+            <p className="font-bold text-xl">Segun</p>
+          </div>
+          <div className="flex justify-center items-center gap-2 px-3 text-white">
+            <a href="https://www.linkedin.com/in/yakubusolomon">
+              <BsLinkedin size={30} />
+            </a>
+            <a href="https://x.com/King__Solo">
+              {" "}
+              <BsTwitterX size={30} />
+            </a>
+          </div>
         </div>
         <div
           ref={scrollRef}
