@@ -351,8 +351,8 @@ export default function Home() {
   console.log(chatHistory);
   return (
     <main className="h-[90vh] w-full flex justify-center items-center relative  ">
-      <div className="md:w-1/2 w-full relative h-full  flex flex-col justify-between items-center bg-slate-200 transition-all overflow-y-hidden ">
-        <div className="h-16 w-full md:w-1/2 bg-green-500 fixed top-0 flex items-center gap-2 bg-opacity-60 rounded-b-3xl ">
+      <div className="md:w-1/2 w-full relative h-full  flex flex-col justify-between items-center bg-slate-900 transition-all overflow-y-hidden ">
+        <div className="h-16 w-full md:w-1/2 bg-cyan-500 shadow shadow-slate-700 fixed top-0 flex items-center gap-2 rounded-b-2xl ">
           <Image src={segun} alt={""} className="h-12 w-12" />
           <p className="font-bold text-xl">Segun</p>
         </div>
@@ -365,14 +365,14 @@ export default function Home() {
               {item.message && (
                 <p
                   key={index}
-                  className="text-white w-fit max-w-[85%] self-end bg-blue-500 rounded-3xl p-3"
+                  className="text-white w-fit max-w-[85%] self-end bg-slate-600 rounded-3xl p-3"
                 >
                   {item.message}
                 </p>
               )}
               <p
                 key={index + 2}
-                className={`text-white bg-green-500 w-fit max-w-[85%] self-start rounded-3xl p-3 ${
+                className={`text-white bg-cyan-500 w-fit max-w-[85%] self-start rounded-3xl p-3 ${
                   item.reply === "typing..." && "animate-pulse"
                 }`}
               >
@@ -383,7 +383,7 @@ export default function Home() {
         </div>
         <form
           onSubmit={onSubmit}
-          className="bg-slate-200 border-t-2 border-slate-300 w-full flex justify-center items-center  gap-2 px-2 py-2 relative"
+          className="bg-slate-800 border-t-2 border-slate-900 w-full flex justify-center items-center  gap-2 px-2 py-2 relative"
           id="bottom"
         >
           <textarea
@@ -391,14 +391,14 @@ export default function Home() {
             name="message"
             rows={1}
             autoComplete="true"
-            className="text-gray-800 w-full cursor-text rounded-full px-4 py-4 pr-12 font-bold  border-slate-300 border-4  border-solid outline-none"
+            className="text-gray-800 w-full cursor-text rounded-full px-4 py-4 pr-12 font-bold  border-slate-600 border-4  border-solid outline-none"
             ref={textAreaRef}
             autoFocus={true}
           />
 
           <button
             type="submit"
-            className=" bg-green-500 text-white  p-3 absolute right-3 rounded-full"
+            className=" bg-cyan-500 text-white  p-3 absolute right-3 rounded-full"
           >
             <LuSendHorizonal size={30} />
           </button>
