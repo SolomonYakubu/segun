@@ -315,9 +315,9 @@ export default function Home() {
     setMessage((chat) => [...chat, { message: text, reply: "typing..." }]);
     setTimeout(async () => {
       if (scrollRef.current) {
-        scrollRef.current.scrollTop = scrollRef.current.scrollHeight - 500;
+        scrollRef.current.scrollTop = scrollRef.current.scrollHeight + 1000;
       }
-    }, 200);
+    }, 100);
 
     const reply: any = await runChat(text);
     const newReply: string = reply.split("**").join("");
@@ -344,7 +344,7 @@ export default function Home() {
 
     setTimeout(async () => {
       if (scrollRef.current) {
-        scrollRef.current.scrollTop = scrollRef.current.scrollHeight - 500;
+        scrollRef.current.scrollTop = scrollRef.current.scrollHeight + 1000;
       }
       setChatHistory((chat) => [...chat.slice(0, -2), ...newHistory]);
     }, 100);
