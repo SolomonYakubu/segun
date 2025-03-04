@@ -20,7 +20,7 @@ type Chat = {
   // add other properties here as needed
 };
 
-const MODEL_NAME = "gemini-1.0-pro";
+const MODEL_NAME = "gemini-2.0-flash";
 const API_KEY: any = process.env.NEXT_PUBLIC_API_KEY;
 
 export default function Home() {
